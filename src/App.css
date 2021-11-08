@@ -1,38 +1,85 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App-content {
+    background-color: #181c27;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    padding-bottom: 60px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+button {
+    display: inline-block;
+    padding: 8px 10px;
+    background-color: rgb(33, 38, 45);
+    border-radius: 8px;
+    width: 200px;
+    text-align: -webkit-center;
+    margin: 30px;
+    font-weight: 600;
+    font-family: inherit;
+    font-size: 14px;
+    color: rgb(201, 209, 217);
+    border: 1px solid rgb(48, 54, 61);
+}
+
+.Gifs {
+    width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img {
+    height: 120px;
+    margin: 4px;
+    border-radius: 5px;
+    flex: 25%;
+}
+
+a {
+    font-weight: 600;
+    color: rgb(201, 209, 217);
+    text-decoration: none;
+    display: flex;
+}
+
+.Go {
+    color: #ff1a75;
+    font-weight: 600;
+    padding-left: 5px;
+    padding-bottom: 20px;
+}
+
+.lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    padding-top: 50px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #ff1a75;
+    border-color: #ff1a75 transparent #ff1a75 transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
   }
-  to {
-    transform: rotate(360deg);
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
   }
-}
+  
