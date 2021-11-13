@@ -1,30 +1,30 @@
-import React, { useState } from 'react'
 import './App.css'
-import ListOfGifs from './components/ListOfGifs'
 import { Link, Route } from 'wouter'
+import Detail from './pages/Detail'
+import Home from './pages/Home'
+import SearchResults from './pages/SearchResults'
+import Search from './components/Search'
 
 function App () {
-  const [keyword, setKeyword] = useState('fox')
-
   return (
     <div className='App'>
       <section className='App-content'>
-        <h1>Gif Finder</h1>
-        <button onClick={() =>
-          keyword === 'anime' ? setKeyword('fox') : setKeyword('anime')}
-        >
-          Click me to change gif
-        </button>
-        <Link to='/search/cat'>
-          Cat gifs
-          <div className='Go'>&gt;</div>
+        <Link to='/'>
+          <h1>Gif Finder</h1>
         </Link>
-        <div className='Gifs'>
-          <Route
-            path='/search/:keyword'
-            component={ListOfGifs}
-          />
-        </div>
+        <Search />
+        <Route
+          path='/'
+          component={Home}
+        />
+        <Route
+          path='/search/:keyword'
+          component={SearchResults}
+        />
+        <Route
+          path='/gif/:id'
+          component={Detail}
+        />
       </section>
     </div>
   )
