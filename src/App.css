@@ -16,12 +16,12 @@
 
 button {
     display: inline-block;
-    padding: 8px 10px;
+    padding: 6px 10px;
     background-color: rgb(33, 38, 45);
     border-radius: 8px;
-    width: 200px;
+    width: 100px;
     text-align: -webkit-center;
-    margin: 30px;
+    margin: 0px;
     font-weight: 600;
     font-family: inherit;
     font-size: 14px;
@@ -33,10 +33,13 @@ button {
     width: 700px;
     display: flex;
     flex-wrap: wrap;
+    min-height: 1000px;
+    margin-bottom: 20px;
 }
 
 img {
     height: 120px;
+    min-height: 120px;
     margin: 4px;
     border-radius: 5px;
     flex: 25%;
@@ -54,6 +57,7 @@ a {
     font-weight: 600;
     padding-left: 5px;
     padding-bottom: 20px;
+    padding-right: 20px;
 }
 
 input {
@@ -63,13 +67,20 @@ input {
   padding: 2px 10px;
   outline: 0;
   background-color: #f5f5f5;
-  margin-bottom: 20px;
+  margin: 40px 10px 10px 50px;
 }
 
 span {
   margin: auto;
   color: #ff1a75;
+  margin-top: 20px;
+  font-size: 15px;
+  margin-bottom: 20px;
+  font-weight: 600;
 }
+ h1 {
+  margin-top: 20px;
+ }
 
 .Detail {
   display: flex;
@@ -78,6 +89,20 @@ span {
   justify-content: center;
   margin-top: 20px;
   height: 300px;
+}
+
+.Trending {
+  font-size: 15px;
+  width: 700px;
+  min-height: 150px;
+}
+
+.Term {
+  display: inline-flex;
+}
+
+.Top {
+  display: inline-flex;
 }
 
 .lds-dual-ring {

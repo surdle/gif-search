@@ -23,6 +23,7 @@ export default function Search () {
         value={keyword}
         onChange={handleChange}
       />
+      <button type='submit'>Search</button>
     </form>
   )
 }

@@ -25,7 +25,8 @@
     ],
     "globals": {
       "fetch": false,
-      "localStorage": false
+      "localStorage": false,
+      "IntersectionObserver": false
     }
   },
   "browserslist": {

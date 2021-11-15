@@ -1,4 +1,4 @@
-import ListOfGifs from '../../components/ListOfGifs'
+import ListOfGifs from 'components/ListOfGifs'
 
 export default function SearchResults ({ params }) {
   const { keyword } = params

@@ -1,5 +1,5 @@
-import useGlobalGifs from '../../hooks/useGlobalGifs'
-import Gif from '../../components/Gif'
+import useGlobalGifs from 'hooks/useGlobalGifs'
+import Gif from 'components/Gif'
 
 export default function Detail ({ params }) {
   const gifs = useGlobalGifs()
@@ -8,7 +8,7 @@ export default function Detail ({ params }) {
 
   return (
     <div className='Detail'>
-      {gif && <span>{gif.title}</span>}
+      {gif && <span>{decodeURI(gif.title)}</span>}
       {
       gif
         ? <Gif id={params.id} title={gif.title} url={gif.url} />

@@ -11,10 +11,12 @@ function App () {
 
     <div className='App'>
       <section className='App-content'>
-        <Link to='/'>
-          <h1>Gif Finder</h1>
-        </Link>
-        <Search />
+        <div className='Top'>
+          <Link to='/'>
+            <h1>Gif Finder</h1>
+          </Link>
+          <Search />
+        </div>
         <GifsContextProvider>
           <Route
             path='/'
