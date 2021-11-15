@@ -24,7 +24,8 @@
       "./node_modules/standard/eslintrc.json"
     ],
     "globals": {
-      "fetch": false
+      "fetch": false,
+      "localStorage": false
     }
   },
   "browserslist": {

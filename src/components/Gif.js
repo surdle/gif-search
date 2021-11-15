@@ -1,8 +1,9 @@
-
+import { Link } from 'wouter'
+// using a regular <a> refresh the app
 export default function Gif ({ title, url, id }) {
   return (
-    <a href={`/gif/${id}`} className='Gif'>
+    <Link to={`/gif/${id}`} className='Gif'>
       <img src={url} alt={title} />
-    </a>
+    </Link>
   )
 }
